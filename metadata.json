@@ -1,0 +1,7 @@
+{
+  "name": "GEOOSE Water Monitoring",
+  "description": "A sophisticated web application for GEOOSE, an intelligent and eco-conscious water-quality monitoring system by Vorta.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
