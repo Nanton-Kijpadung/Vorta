@@ -1,36 +1,67 @@
 /**
  * ASSET CONFIGURATION
+ * We import assets as modules so Vite includes them in the build process.
  */
+
+// Logos
+import vortaLogo from './vorta-logo.png';
+import geooseLogo from './geoose-logo.png';
+
+// Robots
+import robotMain from './robot-image.png';
+import surveyorRobot from './surveyor-robot.png';
+import optimizerRobot from './optimizer-robot.png';
+
+// Sections
+import homeAbout from './home-about.png';
+import homeMonitoring from './home-monitoring.jpg';
+import homeIntelligent from './home-intelligent.png';
+import homeEco from './home-eco.jpg';
+
+// Team
+import allMembers from './all-members.JPG';
+import member1 from './member1.jpg';
+import member2 from './member2.jpg';
+import member3 from './member3.jpg';
+import member4 from './member4.jpg';
+import member5 from './member5.jpg';
+
+// How It Works
+import ecosystemOverview from './overview-ecosystem.png';
+import dockingStation from './docking-station.png';
+
+// Impact
+import pollutedWater from './impact-water.png';
 
 export const ASSETS = {
   logos: {
-    vorta: './vorta-logo.png',
-    geoose: './geoose-logo.png',
+    vorta: vortaLogo,
+    geoose: geooseLogo,
   },
   robot: {
-    main: './robot-image.png' 
+    main: robotMain 
   },
   home: {
-    aboutSection: './home-about.png',
-    monitoring: './home-monitoring.jpg',
-    intelligent: './home-intelligent.png',
-    ecoConscious: './home-eco.jpg'
+    aboutSection: homeAbout,
+    monitoring: homeMonitoring,
+    intelligent: homeIntelligent,
+    ecoConscious: homeEco
   },
   about: {
-    teamCollab: './all-members.jpg',
-    member1: './member1.jpg',
-    member2: './member2.jpg',
-    member3: './member3.jpg',
-    member4: './member4.jpg',
-    member5: './member5.jpg'
+    teamCollab: allMembers,
+    member1: member1,
+    member2: member2,
+    member3: member3,
+    member4: member4,
+    member5: member5
   },
   howItWorks: {
-    ecosystem: './overview-ecosystem.png',
-    surveyor: './surveyor-robot.png',
-    optimizer: './optimizer-robot.png',
-    dockingStation: './docking-station.png'
+    ecosystem: ecosystemOverview,
+    surveyor: surveyorRobot,
+    optimizer: optimizerRobot,
+    dockingStation: dockingStation
   },
   impact: {
-    pollutedWater: './impact-water.png'
+    pollutedWater: pollutedWater
   }
 };
