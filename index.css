@@ -3,27 +3,25 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
   body {
-    @apply bg-brandSurface text-slate-800 antialiased;
-    font-family: 'Noto Sans', 'Open Sans', sans-serif;
-  }
-}
-
-@layer components {
-  .font-display {
-    font-family: 'Space Grotesk', 'Montserrat', sans-serif;
+    @apply bg-slate-50 text-slate-900;
   }
 }
 
 @keyframes float {
   0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-20px); }
   100% { transform: translateY(0px); }
 }
 
 .animate-float {
-  animation: float 3s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', 'Montserrat', sans-serif;
+}
+
+.font-body {
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
 }
