@@ -1,6 +1,7 @@
 /**
  * ASSET CONFIGURATION
  * We import assets as modules so Vite includes them in the build process.
+ * Ensure these files exist in the same directory as this file.
  */
 
 // Logos
