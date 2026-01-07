@@ -28,9 +28,7 @@ const About: React.FC = () => {
                   alt="Vorta Corporate Team" 
                   className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-700" 
                   src={ASSETS.about.teamCollab} 
-                  onError={(e) => { 
-                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800';
-                  }}
+                  onError={(e) => { (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
@@ -71,9 +69,7 @@ const About: React.FC = () => {
                       src={member.img} 
                       className="object-cover w-full h-full transform group-hover:scale-110 transition-all duration-700" 
                       alt={member.name}
-                      onError={(e) => { 
-                        (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(member.name)}&background=random&color=fff&size=200`;
-                      }}
+                      onError={(e) => { (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(member.name)}&background=random&color=fff&size=200` }}
                     />
                   </div>
                 </div>
